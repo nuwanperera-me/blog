@@ -13,7 +13,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import autherImage from "@/public/a.png";
-import ShareButton from "@/components/share-button";
+import ShareButtons from "@/components/share-buttons";
 
 const APP_DOMAIN = "https://augh-blog.vercel.app";
 
@@ -55,14 +55,14 @@ export default async function Page({ params }: PageProps) {
           <p className="text-sm text-zinc-200 mt-4">
             {post.time} • {post.date}
           </p>
+          <div className="">
+          <ShareButtons url={`${APP_DOMAIN}/posts/${params.slug}`} title={post.title} />
+        </div>
           <article className="max-w-none prose prose-invert prose-img:rounded-2xl prose-md mt-6 mx-auto">
             <MDXContent source={post.content} />
           </article>
         </div>
-        <div className="">
-          <ShareButton social="facebook" url={`${APP_DOMAIN}/posts/${params.slug}`} title={post.title} />
-          <ShareButton social="twitter" url={`${APP_DOMAIN}/posts/${params.slug}`}  title={post.title} />
-        </div>
+
       </div>
     </div>
   );
