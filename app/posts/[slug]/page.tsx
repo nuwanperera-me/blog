@@ -23,6 +23,8 @@ interface PageProps {
   };
 }
 
+
+
 export default async function Page({ params }: PageProps) {
   const post = getPostBySlug(params.slug);
   if (!post) return notFound();
@@ -50,19 +52,21 @@ export default async function Page({ params }: PageProps) {
           alt={""}
           className="absolute top-0 right-0 rounded-md m-4 border border-zinc-900"
         />
-        <div className="p-4">
+        <div className=" p-8">
           <h1 className="text-4xl text-zinc-50 font-semibold">{post.title}</h1>
           <p className="text-sm text-zinc-200 mt-4">
-            {post.time} • {post.date}
+            {post.time} <span className="px-4">•</span> {post.date}
           </p>
-          <div className="">
-          <ShareButtons url={`${APP_DOMAIN}/posts/${params.slug}`} title={post.title} />
-        </div>
+          <div className="mt-4">
+            <ShareButtons
+              url={`${APP_DOMAIN}/posts/${params.slug}`}
+              title={post.title}
+            />
+          </div>
           <article className="max-w-none prose prose-invert prose-img:rounded-2xl prose-md mt-6 mx-auto">
             <MDXContent source={post.content} />
           </article>
         </div>
-
       </div>
     </div>
   );
