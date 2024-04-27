@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("font-geist antialiased", "bg-zinc-900", geist.variable)}>
+      <body className={cn("font-geist antialiased", "bg-zinc-900", geist.variable, "back")}>
         <main className="px-4 py-4">
           <p className="text-2xl font-semibold text-zinc-50">
             <Link href={"/"}>
