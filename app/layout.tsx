@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={cn("font-geist antialiased", "bg-zinc-900", geist.variable, "back")}>
         <main className="">
           <NavBar />
-          <div className="p-4">
+          <div className="pt-[70px] p-4">
           {children}
           </div>
         </main>
