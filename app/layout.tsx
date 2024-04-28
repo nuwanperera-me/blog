@@ -6,7 +6,8 @@ import { cn } from "@/lib/utils";
 import { geist } from "@/styles/fonts";
 
 import type { Metadata } from "next";
-import Link from "next/link";
+
+import NavBar from "@/components/nav-bar";
 
 export const metadata: Metadata = {
   title: "Aughh",
@@ -21,13 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("font-geist antialiased", "bg-zinc-900", geist.variable, "back")}>
-        <main className="px-4 py-4">
-          <p className="text-2xl font-semibold text-zinc-50">
-            <Link href={"/"}>
-              Aughh
-            </Link>
-          </p>
+        <main className="">
+          <NavBar />
+          <div className="p-4">
           {children}
+          </div>
         </main>
       </body>
     </html>

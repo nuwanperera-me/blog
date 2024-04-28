@@ -15,7 +15,7 @@ export default function BlogCard() {
         posts.map((post) => (
           <div
             key={post.slug}
-            className="border border-zinc-700 hover:bg-zinc-800 transition-colors duration-200 rounded-2xl"
+            className="border border-zinc-700 hover:bg-zinc-800 hover:scale-[1.02] focus:scale-[1.02] transition-all duration-300 rounded-2xl"
           >
             <Link
               className="text-xl text-zinc-50 font-medium"
@@ -26,7 +26,7 @@ export default function BlogCard() {
                 alt={post.title}
                 height={300}
                 width={900}
-                className="rounded-t-2xl"
+                className="rounded-t-2xl "
               />
               <div className="p-6">
                 <h1 className="text-3xl font-semibold">{post.title}</h1>

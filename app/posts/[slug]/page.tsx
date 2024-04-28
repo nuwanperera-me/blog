@@ -23,8 +23,6 @@ interface PageProps {
   };
 }
 
-
-
 export default async function Page({ params }: PageProps) {
   const post = getPostBySlug(params.slug);
   if (!post) return notFound();
