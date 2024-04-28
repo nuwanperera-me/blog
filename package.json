@@ -10,7 +10,12 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
+    "@tabler/icons-react": "^3.2.0",
+    "@tsparticles/engine": "^3.3.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.3.0",
     "clsx": "^2.1.0",
+    "framer-motion": "^11.1.7",
     "geist": "^1.2.2",
     "gray-matter": "^4.0.3",
     "next": "14.1.0",
