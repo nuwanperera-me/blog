@@ -13,7 +13,7 @@ export default function NavBar(props: NavBarProps) {
         <Link href="/">
           <p className="text-2xl font-semibold text-zinc-50">Aughh</p>
         </Link>
-        <Link href="/subscribe" className="py-2 px-4 border border-zinc-800 hover:bg-zinc-800 rounded-full font-medium text-sm text-zinc-200">
+        <Link href="/subscribe" className="inline-flex justify-center items-center py-2 px-4 border bg-zinc-950 border-zinc-800 transition-all duration-300 hover:bg-zinc-800 rounded-full font-medium text-sm text-zinc-200">
           Subscribe
         </Link>
       </div>
