@@ -31,7 +31,7 @@ export default function RootLayout({
         )}
       >
         <main className="z-10">
-          <NavBar className="z-20"/>
+          <NavBar className="z-30"/>
           <div className=" relative w-full bg-zinc-950 flex flex-col items-center justify-center overflow-hidden rounded-md">
             <div className="w-full absolute inset-0 ">
               <SparklesCore
