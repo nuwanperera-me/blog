@@ -15,6 +15,9 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      minHeight: {
+        newscreen: "calc(100vh - 8rem)",
+      },
       fontFamily: {
         geist: ["var(--font-geist-sans)", ...fontFamily.sans],
       },

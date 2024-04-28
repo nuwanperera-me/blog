@@ -3,8 +3,8 @@ import React from "react";
 
 export default function SparklesPreview() {
   return (
-    <div className="h-screen">
-      <div className="mt-48 p-6 rounded-2xl ">
+    <div className="">
+      <div className="mt-32 p-6 rounded-2xl ">
         <h1 className="text-center font-bold drop-shadow-sm bg-clip-text text-transparent text-5xl md:text-8xl bg-gradient-to-t from-zinc-700 to-zinc-400">
           NewsLetter
         </h1>

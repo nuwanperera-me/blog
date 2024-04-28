@@ -9,6 +9,7 @@ import type { Metadata } from "next";
 
 import NavBar from "@/components/nav-bar";
 import { SparklesCore } from "@/components/ui/sparkles";
+import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Aughh",
@@ -26,13 +27,14 @@ export default function RootLayout({
         className={cn(
           "font-geist antialiased",
           "bg-zinc-950",
+          "min-h-screen",
           geist.variable,
           "back"
         )}
       >
         <main className="z-10">
-          <NavBar className="z-30"/>
-          <div className=" relative w-full bg-zinc-950 flex flex-col items-center justify-center overflow-hidden rounded-md">
+          <NavBar className="z-30" />
+          <div className=" relative w-full h-auto min-h-screen bg-zinc-950 flex flex-col items-center justify-center overflow-hidden rounded-md">
             <div className="w-full absolute inset-0 ">
               <SparklesCore
                 id="tsparticlesfullpage"
@@ -44,8 +46,8 @@ export default function RootLayout({
                 particleColor="#3f3f46"
               />
             </div>
-
-            <div className="z-20 pt-[70px] p-4">{children}</div>
+            <div className="z-20 pt-[70px] p-4 h-full min-h-newscreen">{children}</div>
+          <Footer className="z-40" />
           </div>
         </main>
       </body>
