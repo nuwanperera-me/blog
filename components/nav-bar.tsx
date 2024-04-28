@@ -1,8 +1,14 @@
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-export default function NavBar() {
+type NavBarProps = {
+  className?: string;
+};
+
+export default function NavBar(props: NavBarProps) {
+  const { className } = props;
   return (
-    <nav className="w-full p-4 fixed ">
+    <nav className={cn("w-full p-4 fixed", className)}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/">
           <p className="text-2xl font-semibold text-zinc-50">Aughh</p>

@@ -35,7 +35,7 @@ export default async function Page({ params }: PageProps) {
           Back to blog
         </span>
       </Link>
-      <div className="relative border border-zinc-800 rounded-2xl">
+      <div className="relative bg-zinc-950 border border-zinc-800 rounded-2xl">
         <Image
           src={post.cover}
           width={900}
