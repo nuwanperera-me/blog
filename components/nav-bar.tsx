@@ -7,7 +7,7 @@ export default function NavBar() {
         <Link href="/">
           <p className="text-2xl font-semibold text-zinc-50">Aughh</p>
         </Link>
-        <Link href="/" className="py-2 px-4 border border-zinc-800 hover:bg-zinc-800 rounded-full font-medium text-sm text-zinc-200">
+        <Link href="/subscribe" className="py-2 px-4 border border-zinc-800 hover:bg-zinc-800 rounded-full font-medium text-sm text-zinc-200">
           Subscribe
         </Link>
       </div>

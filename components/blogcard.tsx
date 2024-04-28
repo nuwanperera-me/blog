@@ -9,6 +9,7 @@ import autherImage from "@/public/a.png";
 
 export default function BlogCard() {
   const posts = getPosts();
+
   return (
     <>
       {!!posts &&
