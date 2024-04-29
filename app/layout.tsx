@@ -39,9 +39,9 @@ export default function RootLayout({
               <SparklesCore
                 id="tsparticlesfullpage"
                 background="transparent"
-                minSize={0.6}
+                minSize={0.4}
                 maxSize={1.4}
-                particleDensity={100}
+                particleDensity={30}
                 className="w-full h-full"
                 particleColor="#3f3f46"
               />

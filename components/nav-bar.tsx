@@ -41,12 +41,12 @@ export const FloatingNav = ({ className }: { className?: string }) => {
           y: visible ? 0 : -100,
           opacity: visible ? 1 : 0,
         }}
-        transition={{ duration: 0.3 }}
-        className={cn("w-full p-4 fixed", className)}
+        transition={{ duration: 0.2 }}
+        className={cn("w-full p-4 fixed backdrop-blur-sm border-b border-zinc-800", className)}
       >
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <div className="max-w-screen-2xl mx-auto flex justify-between items-center">
           <Link href="/">
-            <p className="font-semibold bg-clip-text text-transparent text-2xl bg-gradient-to-t from-zinc-700 to-zinc-400">
+            <p className="font-semibold bg-clip-text text-transparent text-3xl bg-gradient-to-t from-zinc-700 to-zinc-400">
               Aughh
             </p>
           </Link>

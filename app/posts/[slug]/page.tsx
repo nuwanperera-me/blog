@@ -30,7 +30,7 @@ export default async function Page({ params }: PageProps) {
   return (
     <div className="max-w-4xl mx-auto flex flex-col mt-6 ">
       <Link className="mt-6 mb-6" href="/">
-        <span className="py-2 px-4 pr-6 rounded-full border border-zinc-800 hover:bg-zinc-800 transition-colors duration-200 inline-flex items-center text-sm text-zinc-200">
+        <span className="py-2 px-4 pr-6 rounded-full border backdrop-blur-sm border-zinc-800 hover:bg-zinc-800 transition-colors duration-200 inline-flex items-center text-sm text-zinc-200">
           <ArrowLeftIcon className="w-4 h-4 mr-2" />
           Back to blog
         </span>
