@@ -36,7 +36,7 @@ export default function RootLayout({
           <FloatingNav className="z-30" />
           <div className=" relative w-full h-auto min-h-screen bg-zinc-950 flex flex-col items-center justify-center overflow-hidden rounded-md">
             <div className="w-full absolute inset-0 ">
-              <SparklesCore
+              {/* <SparklesCore
                 id="tsparticlesfullpage"
                 background="transparent"
                 minSize={0.4}
@@ -44,7 +44,7 @@ export default function RootLayout({
                 particleDensity={30}
                 className="w-full h-full"
                 particleColor="#3f3f46"
-              />
+              /> */}
             </div>
             <div className="z-20 pt-[70px] p-4 h-full min-h-newscreen">
               {children}
