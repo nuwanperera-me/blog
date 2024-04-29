@@ -10,7 +10,7 @@ export default function NotFound() {
         <span className="pl-2 text-4xl">&#128574;</span>
       </div>
       <p className="text-lg max-w-96 text-center text-zinc-600 pt-4">
-        The page you're looking for doesn't exist. Please check the URL or click
+        The page you&apos;re looking for doesn&apos;t exist. Please check the URL or click
         the button below to go back to the homepage.
       </p>
     </div>
