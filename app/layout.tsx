@@ -7,7 +7,7 @@ import { geist } from "@/styles/fonts";
 
 import type { Metadata } from "next";
 
-import NavBar from "@/components/nav-bar";
+import { FloatingNav } from "@/components/nav-bar";
 import { SparklesCore } from "@/components/ui/sparkles";
 import Footer from "@/components/footer";
 
@@ -33,7 +33,7 @@ export default function RootLayout({
         )}
       >
         <main className="z-10">
-          <NavBar className="z-30" />
+          <FloatingNav className="z-30" />
           <div className=" relative w-full h-auto min-h-screen bg-zinc-950 flex flex-col items-center justify-center overflow-hidden rounded-md">
             <div className="w-full absolute inset-0 ">
               <SparklesCore
@@ -46,8 +46,10 @@ export default function RootLayout({
                 particleColor="#3f3f46"
               />
             </div>
-            <div className="z-20 pt-[70px] p-4 h-full min-h-newscreen">{children}</div>
-          <Footer className="z-40" />
+            <div className="z-20 pt-[70px] p-4 h-full min-h-newscreen">
+              {children}
+            </div>
+            <Footer className="z-40" />
           </div>
         </main>
       </body>
