@@ -10,6 +10,7 @@ import type { Metadata } from "next";
 import { FloatingNav } from "@/components/nav-bar";
 import { SparklesCore } from "@/components/ui/sparkles";
 import Footer from "@/components/footer";
+import AlertBox from "@/components/alert";
 
 export const metadata: Metadata = {
   title: "Aughh",
@@ -48,6 +49,7 @@ export default function RootLayout({
             </div>
             <div className="z-20 pt-[70px] p-4 h-full min-h-newscreen">
               {children}
+              <AlertBox message="Under construction 🚧" type="info" />
             </div>
             <Footer className="z-40" />
           </div>
