@@ -13,7 +13,7 @@ export default function Footer(props: FooterProps) {
         <p className="text-center text-sm text-zinc-200 ">
           &copy; {new Date().getFullYear()} Aughh. All rights reserved.
         </p>
-        <p className="text-zinc-50">Made by <a href="https://portfolio-itsmenuwanpereras-projects.vercel.app/">Nuwan Perera</a></p>
+        <p className="text-zinc-50">Made by <a href="https://www.nuwanperera.me/">Nuwan Perera</a></p>
       </div>
     </footer>
   );
