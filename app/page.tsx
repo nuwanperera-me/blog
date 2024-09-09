@@ -1,16 +1,13 @@
 import React from "react";
 
-import Link from "next/link";
+import BlogCard from "@/components/blogcard";
 
-import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
-
-export default function Home() {
+export default async function Page() {
   return (
-    <div className="flex flex-col items-center pt-12">
-      <h1 className="text-zinc-50 text-4xl font-semibold">Home Page</h1>
-      <Link href="/posts">
-        <p className="inline-flex gap-2 pt-4 underline text-zinc-50 text-md ">Go posts <ArrowUpRightIcon className="" width="0.87rem" /></p>
-      </Link>
+    <div className="max-w-2xl mx-auto mt-16 scroll-smooth ">
+      <div className="mt-6 flex flex-col space-y-8">
+        <BlogCard />
+      </div>
     </div>
   );
 }

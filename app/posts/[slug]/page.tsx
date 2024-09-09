@@ -12,10 +12,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 
-import autherImage from "@/public/a.png";
 import ShareButtons from "@/components/share-buttons";
 
-const APP_DOMAIN = "https://augh-blog.vercel.app";
+const APP_DOMAIN = "https://blog.nuwanperera.me";
 
 interface PageProps {
   params: {
@@ -29,26 +28,20 @@ export default async function Page({ params }: PageProps) {
 
   return (
     <div className="max-w-4xl mx-auto flex flex-col mt-6 ">
-      <Link className="mt-6 mb-6" href="/posts">
+      <Link className="mt-6 mb-6" href="/">
         <span className="py-2 px-4 pr-6 rounded-full border backdrop-blur-sm border-zinc-800 hover:bg-zinc-800 transition-colors duration-200 inline-flex items-center text-sm text-zinc-200">
           <ArrowLeftIcon className="w-4 h-4 mr-2" />
           Back to blog
         </span>
       </Link>
-      <div className="relative bg-zinc-950 border border-zinc-800 rounded-2xl">
+      <div className="bg-zinc-950 border border-zinc-800 rounded-2xl">
         <Image
           src={post.cover}
           width={900}
           height={300}
           alt="Cover image"
-          className="rounded-t-2xl"
-        />
-        <Image
-          src={autherImage}
-          width={40}
-          height={40}
-          alt={""}
-          className="absolute top-0 right-0 rounded-md m-4 border border-zinc-900"
+          className="rounded-2xl"
+          priority
         />
         <div className="md:p-8 p-4">
           <h1 className="text-4xl text-zinc-50 font-semibold">{post.title}</h1>
