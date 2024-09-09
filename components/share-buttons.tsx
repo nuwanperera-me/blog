@@ -18,7 +18,7 @@ const FacebookIcon = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      className="text-zinc-500 bg-zinc-800 w-10 h-10 rounded-md p-2 hover:text-zinc-400 outline-zinc-900 outline-offset-1 outline outline-1 hover:outline-zinc-700 transition-colors duration-200"
+      className="text-zinc-500 bg-zinc-800 w-10 h-10 rounded-md p-2 hover:text-zinc-400 outline-zinc-900 outline-offset-1 outline outline-1 hover:outline-zinc-700 transition-colors duration-200 active:scale-90"
       fill="none"
     >
       <path
@@ -40,7 +40,7 @@ const XIcon = () => {
       viewBox="0 0 24 24"
       width="24"
       height="24"
-      className="text-zinc-500 bg-zinc-800 w-10 h-10 rounded-md p-2 hover:text-zinc-400 outline-zinc-900 outline-offset-1 outline outline-1 hover:outline-zinc-700 transition-colors duration-200"
+      className="text-zinc-500 bg-zinc-800 w-10 h-10 rounded-md p-2 hover:text-zinc-400 outline-zinc-900 outline-offset-1 outline outline-1 hover:outline-zinc-700 transition-colors duration-200 active:scale-90"
       fill="none"
     >
       <path
@@ -61,7 +61,7 @@ const LinkedInIcon = () => {
       viewBox="0 0 24 24"
       width="24"
       height="24"
-      className="text-zinc-500 bg-zinc-800 w-10 h-10 rounded-md p-2 hover:text-zinc-400 outline-zinc-900 outline-offset-1 outline outline-1 hover:outline-zinc-700 transition-colors duration-200"
+      className="text-zinc-500 bg-zinc-800 w-10 h-10 rounded-md p-2 hover:text-zinc-400 outline-zinc-900 outline-offset-1 outline outline-1 hover:outline-zinc-700 transition-colors duration-200 active:scale-90"
       fill="none"
     >
       <path
@@ -91,7 +91,7 @@ const LinkIcon = () => {
       viewBox="0 0 24 24"
       width="24"
       height="24"
-      className="text-zinc-500 bg-zinc-800 w-10 h-10 rounded-md p-2 hover:text-zinc-400 outline-zinc-900 outline-offset-1 outline outline-1 hover:outline-zinc-700 transition-colors duration-200"
+      className="text-zinc-500 bg-zinc-800 w-10 h-10 rounded-md p-2 hover:text-zinc-400 outline-zinc-900 outline-offset-1 outline outline-1 hover:outline-zinc-700 transition-colors duration-200 active:scale-90"
       fill="none"
     >
       <path
@@ -114,15 +114,15 @@ const ShareButtons = (props: Props) => {
   return (
     <div className="flex flex-row gap-2">
       <div>
-      <TwitterShareButton url={props.url} title={props.title} className="">
-        <XIcon />
-      </TwitterShareButton>
+        <TwitterShareButton url={props.url} title={props.title} className="">
+          <XIcon />
+        </TwitterShareButton>
       </div>
 
       <div>
-      <LinkedinShareButton url={props.url} title={props.title} className="">
-        <LinkedInIcon />
-      </LinkedinShareButton>
+        <LinkedinShareButton url={props.url} title={props.title} className="">
+          <LinkedInIcon />
+        </LinkedinShareButton>
       </div>
 
       <div>

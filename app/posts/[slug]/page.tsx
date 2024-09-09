@@ -27,13 +27,15 @@ export default async function Page({ params }: PageProps) {
   if (!post) return notFound();
 
   return (
-    <div className="max-w-4xl mx-auto flex flex-col mt-6 ">
-      <Link className="mt-6 mb-6" href="/">
-        <span className="py-2 px-4 pr-6 rounded-full border backdrop-blur-sm border-zinc-800 hover:bg-zinc-800 transition-colors duration-200 inline-flex items-center text-sm text-zinc-200">
-          <ArrowLeftIcon className="w-4 h-4 mr-2" />
-          Back to blog
-        </span>
-      </Link>
+    <div className="max-w-4xl mx-auto flex flex-col mt-6 gap-4">
+      <div>
+        <Link className="mt-6 mb-6" href="/">
+          <button className="py-2 px-4 pr-6 rounded-full border backdrop-blur-sm border-zinc-800 group hover:bg-zinc-800 active:bg-zinc-900 transition-colors duration-200 inline-flex items-center text-sm text-zinc-200">
+            <ArrowLeftIcon className="w-4 h-4 mr-2 group-hover:-translate-x-0.5 transition-transform duration-200" />
+            Back to blog
+          </button>
+        </Link>
+      </div>
       <div className="bg-zinc-950 border border-zinc-800 rounded-2xl">
         <Image
           src={post.cover}
